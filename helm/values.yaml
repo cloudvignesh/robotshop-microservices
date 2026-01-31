@@ -1,0 +1,36 @@
+# values-aks.yaml - Custom values for AKS deployment
+
+# Image settings
+image:
+  repo: robotshop
+  version: latest
+
+# Service type - ClusterIP since we're using ALB
+service:
+  type: ClusterIP
+
+# Redis configuration with persistent storage
+redis:
+  storageClassName: managed-csi-premium
+  persistence:
+    enabled: true
+    size: 5Gi
+    accessMode: ReadWriteOnce
+
+# MongoDB configuration (optional persistence)
+mongodb:
+  persistence:
+    enabled: false  # Can be enabled if needed
+
+# Resource limits (adjust based on your cluster)
+resources:
+  limits:
+    cpu: 200m
+    memory: 256Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+# Ingress disabled (using ALB Gateway instead)
+ingress:
+  enabled: false
