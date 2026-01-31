@@ -51,6 +51,7 @@ VM_SIZE='<the size of the vm in AKS>'
 
 az aks create --resource-group $RESOURCE_GROUP --name $AKS_NAME --location $LOCATION --node-vm-size $VM_SIZE --network-plugin azure --enable-oidc-issuer --enable-workload-identity --generate-ssh-key
 ```
+
 ![aks_created](assets/screenshots/akscreated.png)
 
 ### Install the ALB Controller
@@ -388,14 +389,12 @@ Now, copy and paste the URL in Incognito browser to access the **ROBOT-SHOP E-CO
 **Place the order:**
 ![robot_shop](assets/screenshots/order_placed.png) 
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 # Roadmap
 
 - [ ] Implement data plane layer for east-to-west(service-to-service) communication with a Service Mesh Istio or Linkerd
 - [ ] Create terraform modules for infrastructure
 - [ ] Implement CI/CD pipelines for automated deployments for terraform
+- [ ] Configure Azure DNS with records for host domain and add CNAME record that re-directs to ALB URL. So that user access the app with custom domain.
 ---
 
 **Built with ❤️ by [cloudvignesh](https://github.com/cloudvignesh)**
