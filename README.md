@@ -32,7 +32,7 @@ If you're the developer/architect interested to expand the knowledge on how micr
 
 ## Architecture model for our deployment
 
-- TO-DO
+![arch](assets/screenshots/architecture.png)
 
 # Implementation Guide for application deployment
 
@@ -394,7 +394,7 @@ Now, copy and paste the URL in Incognito browser to access the **ROBOT-SHOP E-CO
 - [ ] Implement data plane layer for east-to-west(service-to-service) communication with a Service Mesh Istio or Linkerd
 - [ ] Create terraform modules for infrastructure
 - [ ] Implement CI/CD pipelines for automated deployments for terraform
-- [ ] Configure Azure DNS with records for host domain and add CNAME record that re-directs to ALB URL. So that user access the app with custom domain.
+- [ ] Configure Azure DNS with records for host domain and add CNAME record that re-directs to ALB URL. So that user access the app with custom domain
 ---
 
 **Built with ❤️ by [cloudvignesh](https://github.com/cloudvignesh)**
