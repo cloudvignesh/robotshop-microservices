@@ -397,4 +397,4 @@ Now, copy and paste the URL in Incognito browser to access the **ROBOT-SHOP E-CO
 - [ ] Configure Azure DNS with records for host domain and add CNAME record that re-directs to ALB URL. So that user access the app with custom domain
 ---
 
-**Built with ❤️ by [cloudvignesh](https://github.com/cloudvignesh)**
+**Built by [cloudvignesh](https://github.com/cloudvignesh)**
